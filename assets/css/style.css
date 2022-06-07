@@ -1,6 +1,7 @@
 *{
     background-color: black;
 }
+/* Navbar */
 .lilogo{
     height: 60px;
     width:60px;
@@ -12,7 +13,18 @@
     gap: 1ch;
     margin-left: 15px;
 }
+.nav-link{
+    text-align: center;
+    margin: 6px;
+    background: linear-gradient(to top, rgba(62, 6, 68, 1) 0%, rgba(62, 6, 68, 1) 4px, transparent 5px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
+}
+.nav-link:hover{
+    background-size: 100% 100%;
+}
 
 .container{
     background-color: white;
 }
+/* Fin Navbar*/

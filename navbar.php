@@ -19,6 +19,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="mx-auto"></div>
             <ul class="navbar-nav">
+                <!-- Searchbar ici -->
+
                 <li class="nav-item">
                     <a href="index.php" class="nav-link text-white text-uppercase">Accueil</a>
                 </li>
