@@ -1,0 +1,18 @@
+*{
+    background-color: black;
+}
+.lilogo{
+    height: 60px;
+    width:60px;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1ch;
+    margin-left: 15px;
+}
+
+.container{
+    background-color: white;
+}
