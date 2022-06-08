@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    
     margin-bottom: 50px;
 }
 .menu-title{
@@ -66,17 +66,12 @@
 
 }
  .menu-category:hover{
-    background-color: #1c1f23;
-    
-    
+    background-color: #1c1f23; 
 } 
 
 .menu-category:hover > a {
-    
-
     font-style: italic;
     color:white;
 
-    
 }
 /* Fin main content */
