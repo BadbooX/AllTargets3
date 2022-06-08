@@ -11,6 +11,24 @@
     <?php 
         include "navbar.php";
     ?>
+    <div class="menu-container">
+        <div><h2 class="menu-title">Menu :</h2></div>
+            <div class="menu-categories" >
+                <button class="menu-category">
+                    <a href="#">Projet 1</a>
+                </button>
+                <button class="menu-category">
+                    <a href="#">Projet 2</a>
+                </button>
+                <button class="menu-category">
+                    <a  href="#">Projet 3</a>
+                </button>
+                <button class="menu-category">
+                    <a  href="#">Proj. futur</a>
+                </button>
+            </div>
+        </div>
+    </div>
 <body>
     <script src="https://kit.fontawesome.com/b6728b60f5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

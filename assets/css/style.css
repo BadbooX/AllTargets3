@@ -28,3 +28,55 @@
     background-color: white;
 }
 /* Fin Navbar*/
+/* main content */
+.menu-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.menu-title{
+    margin-bottom: 100px;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+}
+.menu-categories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20ch;
+}
+.menu-category{
+    border:none;
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+}   
+.menu-category > a{
+    text-decoration: none;
+    color: rgba(62, 6, 68, 1);
+
+    background-color: transparent;
+    font-size: 1.5em;
+    font-style: italic;
+
+}
+ .menu-category:hover{
+    background-color: #1c1f23;
+    
+    
+} 
+
+.menu-category:hover > a {
+    
+
+    font-style: italic;
+    color:white;
+
+    
+}
+/* Fin main content */
