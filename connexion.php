@@ -11,12 +11,13 @@
 <body>
         
     <?php 
+        
         include "navbar.php";
     ?>
     
     
     <div class="connexContainer d-flex flex-column justify-content-center align-items-center mx-auto">
-        <h2 class="h1Connex d-flex justify-content-center align-items-center text-white">Connexion administrateur :</h2>
+        <h2 class="h1Connex d-flex justify-content-center align-items-center text-white">Connexion :</h2>
         <?php 
         /* Gestion des erreurs en get*/
         if(isset($_GET['login_err']))
@@ -72,7 +73,7 @@
                     <p>
                         <a href="index.php" id="linksfoot" class="text-white">Accueil<br></a>
                         <a href="connexion.php" id="linksfoot" class="text-white">Connexion<br></a>
-                        <a href="https://github.com/BadbooX/AllTargets"><i class="logogit fa-brands fa-github"></i></a>
+                        <a href="https://github.com/BadbooX/AllTargets2"><i class="logogit fa-brands fa-github"></i></a>
                     </p>
                 </div>
 

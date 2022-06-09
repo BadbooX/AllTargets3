@@ -39,10 +39,10 @@
                     <p>
                         <a href="index.php" id="linksfoot" class="text-white">Accueil<br></a>
                         <a href="connexion.php" id="linksfoot" class="text-white">Connexion<br></a>
-                        <a href="https://github.com/BadbooX/AllTargets"><i class="logogit fa-brands fa-github"></i></a>
+                        <a href="https://github.com/BadbooX/AllTargets2"><i class="logogit fa-brands fa-github"></i></a>
                     </p>
                 </div>
-                
+
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
                     <h5 class="footertitle text-uppercase  font-weight-bold">Contact</h5>
                     <p class="text-white">
@@ -53,13 +53,13 @@
                     </p>
                 </div>
             </div>
-           
+
             <div class="row d-flex justify-content-center align-items-center text-align-center">
                 <div class="col-md-7 ml-7 col-lg-8">
                     <p class="copyright text-white">Copyright &copy 2022 Tous droits réservés par: Kévin Cotton
                     </p>
                 </div>
-                
+
             </div>
         </div>
     </footer>
