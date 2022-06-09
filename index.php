@@ -31,7 +31,38 @@
             </div>
         </div>
     </div>
-    <?php include "footer.php" ?>
+    <footer>
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                    <h5 class="footertitle text-uppercase  font-weight-bold">Liens utiles</h5>
+                    <p>
+                        <a href="index.php" id="linksfoot" class="text-white">Accueil<br></a>
+                        <a href="connexion.php" id="linksfoot" class="text-white">Connexion<br></a>
+                        <a href="https://github.com/BadbooX/AllTargets"><i class="logogit fa-brands fa-github"></i></a>
+                    </p>
+                </div>
+                
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
+                    <h5 class="footertitle text-uppercase  font-weight-bold">Contact</h5>
+                    <p class="text-white">
+                        <i class="footertitle fa-solid fa-house mr-3"></i> 31 Avenue de mézières
+                    </p>
+                    <p class="text-white">
+                        <i class="footertitle fa-solid fa-phone mr-3 "></i> 06/74/26/54/15
+                    </p>
+                </div>
+            </div>
+           
+            <div class="row d-flex justify-content-center align-items-center text-align-center">
+                <div class="col-md-7 ml-7 col-lg-8">
+                    <p class="copyright text-white">Copyright &copy 2022 Tous droits réservés par: Kévin Cotton
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/b6728b60f5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

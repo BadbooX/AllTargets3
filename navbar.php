@@ -25,7 +25,7 @@
                     <a href="index.php" class="nav-link text-white text-uppercase">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white text-uppercase">Connexion</a>
+                    <a href="connexion.php" class="nav-link text-white text-uppercase">Connexion</a>
                 </li>
                 
             </ul>
