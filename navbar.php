@@ -27,9 +27,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link text-white text-uppercase">Connexion</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white text-uppercase">Contact</a>
-                </li>
+                
             </ul>
         </div>
     </div>
