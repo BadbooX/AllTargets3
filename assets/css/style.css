@@ -87,6 +87,15 @@
     width: 100%;
     height: 100%;
 }
+/* connex */
+.h1Connex{
+    margin-top: 180px;
+}
+#formConnex{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+/* fin de connex */
 /* Fin main content */
 /* footer */
 #linksfoot{
