@@ -56,7 +56,7 @@
     background-color: whitesmoke;
     border-radius: 5px;
     
-    width: 400px;
+    width: 450px;
     height: 350px;
     transition: all 0.3s ease-in-out;
     
@@ -93,6 +93,10 @@
 }
 .logogit{
     font-size: 1.5em;
+    color: whitesmoke;
+}
+.logogit:hover{
+    color:rgba(62, 6, 68, 1);
 }
 
 /* fin footer */
