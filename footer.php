@@ -5,8 +5,8 @@
                 <h5 class="footertitle text-uppercase  font-weight-bold">Liens utiles</h5>
                 <p>
                     <a href="index.php" id="linksfoot" class="text-white">Accueil<br></a>
-                    <a href="contact.php" id="linksfoot" class="text-white">Contact<br></a>
-                    <a href=""><i class="logogit fa-brands fa-github"></i></a>
+                    <a href="connexion.php" id="linksfoot" class="text-white">Connexion<br></a>
+                    <a href="https://github.com/BadbooX/AllTargets"><i class="logogit fa-brands fa-github"></i></a>
                 </p>
             </div>
             
