@@ -17,16 +17,16 @@
         
             <div class="menu-categories" >
                 <button class="menu-category">
-                    <a href="#">Projet 1</a>
+                    <a href="#"><img class="picard" src="assets/img/maquette.png">Maquette</a>
                 </button>
                 <button class="menu-category">
-                    <a href="#">Projet 2</a>
+                    <a href="#"><img class="picard" src="assets/img/notavailable.png">Projet 2</a>
                 </button>
                 <button class="menu-category">
-                    <a  href="#">Projet 3</a>
+                    <a  href="#"><img class="picard" src="assets/img/notavailable.png">Projet 3</a>
                 </button>
                 <button class="menu-category">
-                    <a  href="#">Proj. futur</a>
+                    <a  href="#"><img class="picard" src="assets/img/notavailable.png">Proj. futur</a>
                 </button>
             </div>
         </div>
