@@ -3,8 +3,8 @@
 }
 /* Navbar */
 .lilogo{
-    height: 60px;
-    width:60px;
+    height: 80px;
+    width:80px;
 }
 .navbar-brand{
     display: flex;
@@ -28,6 +28,7 @@
     background-color: white;
 }
 /* Fin Navbar*/
+
 /* main content */
 .menu-container{
     display:flex;
@@ -35,7 +36,7 @@
     justify-content: center;
     align-items: center;
     
-    margin-bottom: 50px;
+    
 }
 .menu-title{
     margin-bottom: 100px;
@@ -45,16 +46,20 @@
 }
 .menu-categories{
     display: grid;
+    margin-top:200px;
     grid-template-columns: repeat(2, 1fr);
-    gap:20ch;
+    gap:10ch;
+    margin-bottom: 100px;
 }
 .menu-category{
     border:none;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 5px;
-    width: 200px;
-    height: 200px;
+    
+    width: 450px;
+    height: 350px;
     transition: all 0.3s ease-in-out;
+    
 }   
 .menu-category > a{
     text-decoration: none;
@@ -71,7 +76,38 @@
 
 .menu-category:hover > a {
     font-style: italic;
-    color:white;
+    color:whitesmoke;
 
 }
+.bg-dark{
+    --bs-bg-opacity:0;
+    
+}
 /* Fin main content */
+/* footer */
+#linksfoot{
+    text-decoration: none;
+ }
+.footertitle{
+    color:rgba(62, 6, 68, 1);
+}
+.logogit{
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+.logogit:hover{
+    color:rgba(62, 6, 68, 1);
+}
+
+/* fin footer */
+@media (max-width: 1250px) {
+    .menu-categories{
+        gap:8ch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
