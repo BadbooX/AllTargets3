@@ -3,8 +3,8 @@
 }
 /* Navbar */
 .lilogo{
-    height: 60px;
-    width:60px;
+    height: 80px;
+    width:80px;
 }
 .navbar-brand{
     display: flex;
@@ -46,16 +46,18 @@
 }
 .menu-categories{
     display: grid;
+    margin-top:200px;
     grid-template-columns: repeat(2, 1fr);
-    gap:20ch;
+    gap:10ch;
     margin-bottom: 100px;
 }
 .menu-category{
     border:none;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 5px;
-    width: 200px;
-    height: 200px;
+    
+    width: 400px;
+    height: 350px;
     transition: all 0.3s ease-in-out;
     
 }   
@@ -86,13 +88,21 @@
 #linksfoot{
     text-decoration: none;
  }
-.copyright{
-    margin-left: 370px;
+.footertitle{
+    color:rgba(62, 6, 68, 1);
 }
+.logogit{
+    font-size: 1.5em;
+}
+
 /* fin footer */
 @media (max-width: 1250px) {
     .menu-categories{
-        gap:5ch;
+        gap:8ch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

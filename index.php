@@ -14,7 +14,7 @@
         include "navbar.php";
     ?>
     <div class="menu-container">
-        <div><h2 class="menu-title">Menu :</h2></div>
+        
             <div class="menu-categories" >
                 <button class="menu-category">
                     <a href="#">Projet 1</a>
