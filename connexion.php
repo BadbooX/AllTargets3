@@ -16,7 +16,7 @@
     
     
     <div class="connexContainer d-flex flex-column justify-content-center align-items-center mx-auto">
-        <h1 class="h1Connex d-flex justify-content-center align-items-center text-white">Connexion administrateur :</h1>
+        <h2 class="h1Connex d-flex justify-content-center align-items-center text-white">Connexion administrateur :</h2>
         <?php 
         /* Gestion des erreurs en get*/
         if(isset($_GET['login_err']))
@@ -48,7 +48,7 @@
             }
         }
         ?>
-        <form  id="formConnex" action="connexion_traitement.php" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center" method="post">
+        <form  id="formConnex" action="connexionTraitement.php" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center" method="post">
             <div class="col-md-12">
                 <label for="nom" class="form-label text-white">Identifiant :</label>
                 <input type="text" name="pseudo" placeholder="Entrez votre Identifiant" class="form-control" id="nomAdmin" autocomplete="off" required>
