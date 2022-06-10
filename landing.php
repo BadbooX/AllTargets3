@@ -11,12 +11,11 @@
 <body>
     <?php  
     require_once 'session_verif.php';
-
-    
     include 'config.php';
+    include 'navbaruser.php';
     
     ?>
-    <h1 text-white text-align-center>BOnjour <?php echo $_SESSION['user']; ?></h1>
+    <h1 text-white text-align-center>Bonjour <?php echo $login ?></h1>
 
     
     <script src="https://kit.fontawesome.com/b6728b60f5.js" crossorigin="anonymous"></script>

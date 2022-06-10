@@ -12,6 +12,7 @@
         
     <?php 
         include "navbar.php";
+        
     ?>
     <div class="menu-container">
         

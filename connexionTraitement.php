@@ -1,6 +1,7 @@
 <?php 
-    session_start();
+    
     include "config.php";
+    $_SESSION['logged'] = true;
 
     if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && isset($_POST['password']) && !empty($_POST['password'])){
 
@@ -21,9 +22,9 @@
                 
                 if($data['psswd_user'] === $password)
                 {
-                    $_SESSION['user'] = $data['pseudo'];
+                    session_start();
+                    $_SESSION['pseudo'] = $pseudo;
                     $_SESSION['logged'] = true;
-                    
                     header('Location:landing.php');
 
                 }else header('Location:connexion.php?login_err=mdp');
@@ -31,4 +32,3 @@
         }else header('Location:connexion.php?login_err=inexistant');
     }else header('Location:connexion.php');
     
-?>
