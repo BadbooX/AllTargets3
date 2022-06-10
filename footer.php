@@ -13,11 +13,15 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
                 <h5 class="footertitle text-uppercase  font-weight-bold">Contact</h5>
                 <p class="text-white">
-                    <i class="footertitle fa-solid fa-house mr-3"></i> 31 Avenue de mézières
+                    <i class="footertitle fa-solid fa-house mr-3"></i> 2 place du marquis
                 </p>
                 <p class="text-white">
-                    <i class="footertitle fa-solid fa-phone mr-3 "></i> 06/74/26/54/15
+                    <i class="footertitle fa-solid fa-at mr-3"></i> adresse@exemple.com
                 </p>
+                <p class="text-white">
+                    <i class="footertitle fa-solid fa-phone mr-3 "></i> 06/49/26/27/32
+                </p>
+                    
             </div>
         </div>
        
