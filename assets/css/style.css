@@ -33,6 +33,7 @@
 
 /* main content */
 .menu-container{
+    line-height: 2em;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +59,7 @@ strong{
     margin-top:200px;
     grid-template-columns: repeat(2, 1fr);
     gap:10ch;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 .menu-category{
     border:none;
@@ -66,7 +67,7 @@ strong{
     border-radius: 5px;
     
     width: 350px;
-    height: 250px;
+    height: 200px;
     transition: all 0.3s ease-in-out;
     opacity: 0.6;
     
@@ -127,10 +128,20 @@ strong{
 /* fin footer */
 
 /*User*/
-.titlelanding{
+.titlecrudprod{
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.welcomelanding{
     color: white;
     margin-top: 150px;
-    margin-bottom: -200px;
+    margin-bottom: -190px;
+}
+
+
+.inputlanding{
+    background-color: whitesmoke;
+    color:black;
 }
 /* Footer user*/
 .footeruser{
@@ -149,10 +160,11 @@ strong{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
     .menu-category{
-        width: 300px;
-        height: 150px;
+        width: 350px;
+        height: 200px;
     }
 }
 

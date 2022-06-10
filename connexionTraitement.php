@@ -25,6 +25,7 @@
                     session_start();
                     $_SESSION['pseudo'] = $pseudo;
                     $_SESSION['logged'] = true;
+
                     header('Location:landing.php');
 
                 }else header('Location:connexion.php?login_err=mdp');
