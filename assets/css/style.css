@@ -65,9 +65,10 @@ strong{
     background-color: whitesmoke;
     border-radius: 5px;
     
-    width: 450px;
-    height: 350px;
+    width: 350px;
+    height: 250px;
     transition: all 0.3s ease-in-out;
+    opacity: 0.6;
     
 }   
 .menu-category > a{
@@ -81,6 +82,8 @@ strong{
 }
  .menu-category:hover{
     background-color: rgba(62, 6, 68, 1); 
+
+    opacity: 1;
 } 
 
 .menu-category:hover > a {
@@ -127,7 +130,7 @@ strong{
 .titlelanding{
     color: white;
     margin-top: 150px;
-    margin-bottom: -2px;
+    margin-bottom: -200px;
 }
 /* Footer user*/
 .footeruser{

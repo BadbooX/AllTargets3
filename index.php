@@ -15,21 +15,19 @@
         
     ?>
     <div class="menu-container">
-        
-            <div class="menu-categories" >
-                <button class="menu-category">
-                    <a href="#"><img class="picard" src="assets/img/maquette.png">Maquette</a>
-                </button>
-                <button class="menu-category">
-                    <a href="#"><img class="picard" src="assets/img/notavailable.png">Projet 2</a>
-                </button>
-                <button class="menu-category">
-                    <a  href="#"><img class="picard" src="assets/img/notavailable.png">Projet 3</a>
-                </button>
-                <button class="menu-category">
-                    <a  href="#"><img class="picard" src="assets/img/notavailable.png">Proj. futur</a>
-                </button>
-            </div>
+        <div class="menu-categories" >
+            <button class="menu-category">
+                <a href="#"><img class="picard" src="assets/img/maquette.png">Maquette</a>
+            </button>
+            <button class="menu-category">
+                <a href="#"><img class="picard" src="assets/img/notavailable.png">Projet 2</a>
+            </button>
+            <button class="menu-category">
+                <a  href="#"><img class="picard" src="assets/img/notavailable.png">Projet 3</a>
+            </button>
+            <button class="menu-category">
+                <a  href="#"><img class="picard" src="assets/img/notavailable.png">Proj. futur</a>
+            </button>
         </div>
     </div>
     <footer>
