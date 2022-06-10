@@ -32,6 +32,14 @@
                     </div>
                     <?php
                     break;
+                case 'session':
+                    ?>
+                    <div class="alert alert-danger">
+                        <strong>Erreur: Vous n'êtes pas connecté !</strong>
+                    </div>
+                    <?php
+                    break;
+                    
                 case 'identifiant':
                     ?>
                     <div class="alert alert-danger">

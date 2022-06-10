@@ -10,7 +10,8 @@
 </head>
 <body>
     <?php  
-    session_start();
+    require_once 'session_verif.php';
+
     
     include 'config.php';
     
