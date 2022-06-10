@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
     <div class="container">
         <div class="cont">
-            <a href="index.php" class="navbar-brand">
+            <a href="landing.php" class="navbar-brand">
                 <img class="lilogo" src="assets/img/target.png" alt="">
                 <h2>AllTargets</h2>
             </a>
@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse p-2" id="navbarNav">
             <div class="mx-auto"></div>
             <ul class="navbar-nav">
-                <!-- Searchbar ici -->
+                
 
                 <li class="nav-item">
                     <a href="landing.php" class="nav-link text-white text-uppercase">Accueil</a>
@@ -31,3 +31,4 @@
             </ul>
         </div>
     </div>
+</nav>

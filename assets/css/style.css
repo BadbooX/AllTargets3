@@ -1,5 +1,7 @@
 *{
     background-color: black;
+    margin: 0;
+    padding:0;
 }
 /* Navbar */
 .lilogo{
@@ -36,7 +38,14 @@
     justify-content: center;
     align-items: center;
     
-    
+}
+span{
+    border-radius: 5px;
+    color: white;
+
+}
+strong{
+    background-color: transparent;
 }
 .menu-title{
     margin-bottom: 100px;
@@ -113,6 +122,23 @@
 }
 
 /* fin footer */
+
+/*User*/
+.titlelanding{
+    color: white;
+    margin-top: 150px;
+    margin-bottom: -2px;
+}
+/* Footer user*/
+.footeruser{
+    margin-top: -16px;
+}
+/* fin footer user */
+/*fin user*/
+
+
+
+
 @media (max-width: 1250px) {
     .menu-categories{
         gap:8ch;
@@ -120,6 +146,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .menu-category{
+        width: 300px;
+        height: 150px;
     }
 }
 

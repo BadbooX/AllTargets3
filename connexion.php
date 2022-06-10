@@ -54,6 +54,13 @@
                     </div>
                     <?php
                     break;
+                case 'succesdisco':
+                    ?>
+                    <div class="alert alert-success" role="alert">
+                        <strong>Succès: Déconnexion réussi</strong>
+                    </div>
+                    <?php
+                    break;
             }
         }
         ?>
