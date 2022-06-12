@@ -30,7 +30,7 @@
             while ($row = $stmt->fetch()) {
               echo "<button  class='menu-category'>
                 
-                <a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  ."'>".$row['nom_projetuser']."     ".$row['time_projetuser'] ."</a>
+                <a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>" . $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser'] ."</a>
                 </button>";
             }
             ?>
@@ -38,18 +38,17 @@
         </div>
         <div class="formishUser">
             
-            <h2 class="titlecrudprod text-white">Créer un projet :</h2>
+            <h2 class="titlecrudprod text-white d-flex justify-content-center">Créer un projet :</h2>
             <form enctype="multipart/form-data" action="formishuser_traitement.php" class="formuser d-flex justify-content-center align-items-center flex-column" method="post">
-                <label for="" class="text-white" >Nom de projet</label>
-                <input class="inputlanding" type="text" name="nameProjet" autocomplete="off" placeholder="Entrez un nom de projet" required>
-                <label for="" class="text-white" >Lien du projet</label>
-                <input class="inputlanding" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
-                <label for="" class="text-white" >Image du projet</label>
-                <input class="inputlanding" type="file" name="linkPicProjet"  autocomplete="off" placeholder="Lien de l'image du projet" required>
-                <label for="" class="text-white" >Votre pseudo</label>
-                <input class="inputlanding" type="text" name="pseudoProjet" autocomplete="off" placeholder="Entrez votre pseudo" required>
-                <label for="" class="text-white" >Catégorie</label>
-                <input class="inputlanding" type="text" name="categoProjet" autocomplete="off" placeholder="Quel est sa catégorie" required>
+                <label for="" class="form-label text-white" >Nom de projet</label>
+                <input class="form-control mb-2" type="text" name="nameProjet" autocomplete="off" placeholder="Entrez un nom de projet" required>
+                <label for="" class="form-label text-white" >Lien du projet</label>
+                <input class="form-control mb-2" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
+                <label for="" class="form-label text-white" >Image du projet</label>
+                <input class="form-control mb-2" type="file" name="linkPicProjet"  autocomplete="off" placeholder="Lien de l'image du projet" required>
+                
+                <label for="" class="form-label text-white" >Catégorie</label>
+                <input class="form-control mb-2" type="text" name="categoProjet" autocomplete="off" placeholder="Quel est sa catégorie" required>
             <button type="submit" class="btnFormUser">Envoyer</button>
             </form>
             

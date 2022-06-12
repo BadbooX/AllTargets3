@@ -12,23 +12,23 @@
         
     <?php 
         include "navbar.php";
+        include "config.php";
         
     ?>
     <div class="titlescards d-flex justify-content-center align-items-center mx-auto"><h2 class="text-white">Les projets</h2></div>
     <div class="menu-container">
         <div class="menu-categories" >
-            <button class="menu-category">
-                <a href="#"><img class="picard" src="assets/img/maquette.png">Maquette</a>
-            </button>
-            <button class="menu-category">
-                <a href="#"><img class="picard" src="assets/img/notavailable.png">Projet 2</a>
-            </button>
-            <button class="menu-category">
-                <a  href="#"><img class="picard" src="assets/img/notavailable.png">Projet 3</a>
-            </button>
-            <button class="menu-category">
-                <a  href="#"><img class="picard" src="assets/img/notavailable.png">Proj. futur</a>
-            </button>
+                
+            <?php 
+            $stmt = $bdd->query("SELECT * FROM projetuser_alltargets");
+            while ($row = $stmt->fetch()) {
+              echo "<button  class='menu-category'>
+                
+                <a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>" . $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser'] ."</a>
+                </button>";
+            }
+            ?>
+            
         </div>
     </div>
     <footer>

@@ -1,20 +1,20 @@
 <?php
-
+require_once 'session_verif.php';
 include 'config.php';
 $_SESSION['logged'] = true;
 
 if(isset($_POST['nameProjet']) && !empty($_POST['nameProjet'])
  && isset($_POST['linkProjet']) && !empty($_POST['linkProjet'])
- && isset($_POST['pseudoProjet']) && !empty($_POST['pseudoProjet'])
  && isset($_POST['categoProjet']) && !empty($_POST['categoProjet'])){
-    echo "2";
+    
     $nameProj = htmlspecialchars($_POST['nameProjet']);
     $linkProj = htmlspecialchars($_POST['linkProjet']);
-    $pseudoProj = htmlspecialchars($_POST['pseudoProjet']);
+    $pseudoProj = htmlspecialchars($_SESSION['pseudo']);
     $categoProj = htmlspecialchars($_POST['categoProjet']);
     $maintenant = date('H:i:Y');
+    
     $filename='';
-    var_dump($_FILES);
+    
     if (isset($_FILES)){
                 $file = $_FILES['linkPicProjet'];
                 $filename = $file['name'];

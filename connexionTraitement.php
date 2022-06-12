@@ -24,6 +24,7 @@
                 {
                     session_start();
                     $_SESSION['pseudo'] = $pseudo;
+                    
                     $_SESSION['logged'] = true;
 
                     header('Location:landing.php');
