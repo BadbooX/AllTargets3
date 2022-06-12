@@ -14,6 +14,7 @@
         include "navbar.php";
         
     ?>
+    <div class="titlescards d-flex justify-content-center align-items-center mx-auto"><h2 class="text-white">Les projets</h2></div>
     <div class="menu-container">
         <div class="menu-categories" >
             <button class="menu-category">
@@ -45,10 +46,13 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto ">
                     <h5 class="footertitle text-uppercase  font-weight-bold">Contact</h5>
                     <p class="text-white">
-                        <i class="footertitle fa-solid fa-house mr-3"></i> 31 Avenue de mézières
+                        <i class="footertitle fa-solid fa-house mr-3"></i> 2 rue du beau jardin
                     </p>
                     <p class="text-white">
-                        <i class="footertitle fa-solid fa-phone mr-3 "></i> 06/74/26/54/15
+                        <i class="footertitle fa-solid fa-at mr-3"></i> adresse@exemple.com
+                    </p>
+                    <p class="text-white">
+                        <i class="footertitle fa-solid fa-phone mr-3 "></i> 06/24/56/64/65
                     </p>
                 </div>
             </div>

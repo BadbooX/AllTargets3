@@ -56,7 +56,7 @@ strong{
 }
 .menu-categories{
     display: grid;
-    margin-top:200px;
+    margin-top:50px;
     grid-template-columns: repeat(2, 1fr);
     gap:10ch;
     margin-bottom: 120px;
@@ -129,18 +129,30 @@ strong{
 
 /*User*/
 .titlecrudprod{
+    margin-top: 50px;
+}
+.titlescards{
     margin-top: 200px;
-    margin-bottom: 50px;
 }
 .welcomelanding{
     color: white;
     margin-top: 150px;
-    margin-bottom: -190px;
+    margin-bottom: -100px;
 }
+.formishUser{
+    margin-bottom: 100px;
 
-
+}
+.btnFormUser{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+}
 .inputlanding{
     background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 20px;
     color:black;
 }
 /* Footer user*/

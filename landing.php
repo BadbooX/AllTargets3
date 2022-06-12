@@ -17,25 +17,12 @@
     ?>
     <div class="welcomelanding text-white d-flex flex-column justify-content-center align-items-center">
         <h1 class="titlelanding" text-white text-align-center>Bonjour <?php echo $login ?></h1>
-        <p>Vous souhaitez publier un de vos projets ?</p>
+        <p>Vous souhaitez publier l'un de vos projets ?</p>
     </div>
     
     <div class="menu-container">
-        <h2 class="titlecrudprod text-white">Créer un projet :</h2>
-        <form action="crud.php" class="formuser d-flex justify-content-center align-items-center flex-column" method="post">
-        <label for="" class="text-white" >Nom de projet</label>
-        <input class="inputlanding" type="text" name="nameProjet" autocomplete="off" placeholder="Entrez un nom de projet" required>
-        <label for="" class="text-white" >Lien du projet</label>
-        <input class="inputlanding" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
-        <label for="" class="text-white" >Image du projet</label>
-        <input class="inputlanding" type="text" name="" autocomplete="off" placeholder="Entrez un nom de projet">
-        <label for="" class="text-white" >Nom de projet</label>
-        <input class="inputlanding" type="text" name="" autocomplete="off" placeholder="Entrez un nom de projet">
-        <label for="" class="text-white" >Nom de projet</label>
-        <input class="inputlanding" type="text" name="" autocomplete="off" placeholder="Entrez un nom de projet">
-        <label for="" class="text-white" >Nom de projet</label>
-        <input class="inputlanding" type="text" name="" autocomplete="off" placeholder="Entrez un nom de projet">
-        </form>
+        
+        <div class="titlescards d-flex justify-content-center align-items-center mx-auto"><h2 class="text-white">Les projets</h2></div>
         <div class="menu-categories" >
             
             <button  class="menu-category ">
@@ -50,6 +37,22 @@
             <button class="menu-category">
                 <a  href="#"><img class="picard" src="assets/img/notavailable.png">Proj. futur</a>
             </button>
+        </div>
+        <div class="formishUser">
+            <h2 class="titlecrudprod text-white">Créer un projet :</h2>
+            <form action="crud.php" class="formuser d-flex justify-content-center align-items-center flex-column" method="post">
+            <label for="" class="text-white" >Nom de projet</label>
+            <input class="inputlanding" type="text" name="nameProjet" autocomplete="off" placeholder="Entrez un nom de projet" required>
+            <label for="" class="text-white" >Lien du projet</label>
+            <input class="inputlanding" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
+            <label for="" class="text-white" >Image du projet</label>
+            <input class="inputlanding" type="text" name="" autocomplete="off" placeholder="Lien de l'image du projet" required>
+            <label for="" class="text-white" >Votre pseudo</label>
+            <input class="inputlanding" type="text" name="" autocomplete="off" placeholder="Entrez votre pseudo" required>
+            <label for="" class="text-white" >Catégorie</label>
+            <input class="inputlanding" type="text" name="" autocomplete="off" placeholder="Quel est sa catégorie" required>
+            <button type="submit" class="btnFormUser">Envoyer</button>
+            </form>
         </div>
     </div>
     <?php
