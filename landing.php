@@ -25,39 +25,40 @@
         <div class="titlescards d-flex justify-content-center align-items-center mx-auto"><h2 class="text-white">Les projets</h2></div>
         <div class="menu-categories" >
             
-            <button  class="menu-category ">
-                <a href="#"><img class="picard" src="assets/img/maquette.png">Maquette</a>
-            </button>
-            <button class="menu-category">
-                <a href="#"><img class="picard" src="assets/img/notavailable.png">Projet 2</a>
-            </button>
-            <button class="menu-category">
-                <a  href="#"><img class="picard" src="assets/img/notavailable.png">Projet 3</a>
-            </button>
-            <button class="menu-category">
-                <a  href="#"><img class="picard" src="assets/img/notavailable.png">Proj. futur</a>
-            </button>
+            <?php 
+            $stmt = $bdd->query("SELECT * FROM projetuser_alltargets");
+            while ($row = $stmt->fetch()) {
+              echo "<button  class='menu-category'>
+                
+                <a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  ."'>".$row['nom_projetuser']."     ".$row['time_projetuser'] ."</a>
+                </button>";
+            }
+            ?>
+            
         </div>
         <div class="formishUser">
+            
             <h2 class="titlecrudprod text-white">Créer un projet :</h2>
-            <form action="formishuser_traitement.php" class="formuser d-flex justify-content-center align-items-center flex-column" method="post">
-            <label for="" class="text-white" >Nom de projet</label>
-            <input class="inputlanding" type="text" name="nameProjet" autocomplete="off" placeholder="Entrez un nom de projet" required>
-            <label for="" class="text-white" >Lien du projet</label>
-            <input class="inputlanding" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
-            <label for="" class="text-white" >Image du projet</label>
-            <input class="inputlanding" type="text" name="linkPicProjet" autocomplete="off" placeholder="Lien de l'image du projet" required>
-            <label for="" class="text-white" >Votre pseudo</label>
-            <input class="inputlanding" type="text" name="pseudoProjet" autocomplete="off" placeholder="Entrez votre pseudo" required>
-            <label for="" class="text-white" >Catégorie</label>
-            <input class="inputlanding" type="text" name="categoProjet" autocomplete="off" placeholder="Quel est sa catégorie" required>
+            <form enctype="multipart/form-data" action="formishuser_traitement.php" class="formuser d-flex justify-content-center align-items-center flex-column" method="post">
+                <label for="" class="text-white" >Nom de projet</label>
+                <input class="inputlanding" type="text" name="nameProjet" autocomplete="off" placeholder="Entrez un nom de projet" required>
+                <label for="" class="text-white" >Lien du projet</label>
+                <input class="inputlanding" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
+                <label for="" class="text-white" >Image du projet</label>
+                <input class="inputlanding" type="file" name="linkPicProjet"  autocomplete="off" placeholder="Lien de l'image du projet" required>
+                <label for="" class="text-white" >Votre pseudo</label>
+                <input class="inputlanding" type="text" name="pseudoProjet" autocomplete="off" placeholder="Entrez votre pseudo" required>
+                <label for="" class="text-white" >Catégorie</label>
+                <input class="inputlanding" type="text" name="categoProjet" autocomplete="off" placeholder="Quel est sa catégorie" required>
             <button type="submit" class="btnFormUser">Envoyer</button>
             </form>
+            
         </div>
     </div>
     <?php
     include 'footeruser.php'; 
     ?>
+    
     <script src="https://kit.fontawesome.com/b6728b60f5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
