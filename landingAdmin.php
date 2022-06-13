@@ -12,12 +12,12 @@
     <?php  
     require_once 'session_verif.php';
     include 'config.php';
-    include 'navbaruser.php';
+    include 'navbaradmin.php';
     
     ?>
     <div class="welcomelanding text-white d-flex flex-column justify-content-center align-items-center">
         <h1 class="titlelanding" text-white text-align-center>Bonjour <?php echo $login ?></h1>
-        <p>Vous souhaitez publier/modifier/supprimer un projets ou même créer un utilisateur ?</p>
+        <p>Publier/modifier/supprimer un projet.<br>Créer un utilisateur ?</p>
     </div>
     <?php 
     if(isset($_GET['login_err']))
@@ -64,13 +64,14 @@
     </div>
     
     <div class="menu-container">
-        <div class="titlescards d-flex justify-content-center align-items-center mx-auto"><h2 class="text-white">Les projets</h2></div>
-        <div class="menu-categories" >
+        <div class="titlescards d-flex justify-content-center align-items-center mx-auto"><h2 class="text-white">Les projets :</h2></div>
+        <div class="menu-categoro" >
             
             <?php 
             $stmt = $bdd->query("SELECT * FROM projetuser_alltargets");
             while ($row = $stmt->fetch()) {
-              echo "<button  class='menu-category'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser']."    ".$row['categorie_projetuser'].""."<button class='btn text-white'>Supprimer</button><br><button class='btn text-white'>Modifier</button></a></button>";
+              echo "<div><button  class='menu-categori'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."  <br>   ".$row['time_projetuser']."    ".$row['categorie_projetuser'].""."</a></div><div class='boxCommand text-align align-item-center justify-content-center'>
+              <button class='btn text-white' onclick='delete_projet(event.target.id)' id='". $row['id_projetuser']."'>Supprimer</button><br><button class='btn text-white'>Modifier</button></button></div>";
             }
             ?>
             
@@ -96,10 +97,23 @@
         </div>
     </div>
     <?php
-    include 'footeruser.php'; 
+    include 'footeradmin.php'; 
     ?>
     
     <script src="https://kit.fontawesome.com/1f7ab514ca.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function delete_projet(id){
+            $.post('traitement_delete.php', {
+                id: id}, 
+                
+                function(returnedData){
+                    
+                location.reload();
+
+            });
+        }
+        </script>
 </body>
 </html>
