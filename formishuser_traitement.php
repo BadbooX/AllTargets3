@@ -11,7 +11,7 @@ if(isset($_POST['nameProjet']) && !empty($_POST['nameProjet'])
     $linkProj = htmlspecialchars($_POST['linkProjet']);
     $pseudoProj = htmlspecialchars($_SESSION['pseudo']);
     $categoProj = htmlspecialchars($_POST['categoProjet']);
-    $maintenant = date('H:i:Y');
+    $maintenant = date('d/m/Y');
     
     $filename='';
     

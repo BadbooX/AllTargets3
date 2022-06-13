@@ -161,7 +161,14 @@ strong{
 }
 /* fin footer user */
 /*fin user*/
-
+/* Admin */
+.createUser{
+    margin-top: 100px;
+}
+.menu-container{
+    margin-top: -200px;
+}
+/*  fin Admin */
 
 
 

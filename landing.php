@@ -28,11 +28,12 @@
             <?php 
             $stmt = $bdd->query("SELECT * FROM projetuser_alltargets");
             while ($row = $stmt->fetch()) {
-              echo "<button  class='menu-category'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser'] ."</a></button>";
+              echo "<button  class='menu-category'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']." <br>  ".$row['time_projetuser'] ."  ".$row['categorie_projetuser']." </a></button>";
             }
             ?>
             
         </div>
+        
         <div class="formishUser">
             
             <h2 class="titlecrudprod text-white d-flex justify-content-center">Créer un projet :</h2>
@@ -43,13 +44,13 @@
                 <input class="form-control mb-2" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
                 <label for="" class="form-label text-white" >Image du projet</label>
                 <input class="form-control mb-2" type="file" name="linkPicProjet"  autocomplete="off" placeholder="Lien de l'image du projet" required>
-                
                 <label for="" class="form-label text-white" >Catégorie</label>
                 <input class="form-control mb-2" type="text" name="categoProjet" autocomplete="off" placeholder="Quel est sa catégorie" required>
                 <button type="submit" class="btn btn-dark">Envoyer</button>
             </form>
             
         </div>
+        
     </div>
     <?php
     include 'footeruser.php'; 

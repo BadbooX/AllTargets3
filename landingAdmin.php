@@ -17,22 +17,66 @@
     ?>
     <div class="welcomelanding text-white d-flex flex-column justify-content-center align-items-center">
         <h1 class="titlelanding" text-white text-align-center>Bonjour <?php echo $login ?></h1>
-        <p>Vous souhaitez publier l'un de vos projets ?</p>
+        <p>Vous souhaitez publier/modifier/supprimer un projets ou même créer un utilisateur ?</p>
+    </div>
+    <?php 
+    if(isset($_GET['login_err']))
+    {
+        $err = htmlspecialchars($_GET['reg_err']);
+        switch($err)
+        {
+            case 'succes':
+                ?>
+                <div class="alert alert-succes">
+                    <strong>Succès: Création de profil réussi !</strong>
+                </div>
+                <?php
+                break;
+            case 'succes':
+                ?>
+                <div class="alert alert-danger" role="alert">
+                    <strong>Erreur: Champs non remplis</strong>
+                </div>
+                <?php
+                break;
+        }
+    }
+    ?>
+    <div class="createUser d-flex flex-column justify-content-center align-items-center mx-auto">
+        <h2 class="titlecrudprod text-white d-flex justify-content-center">Créer un utilisateur :</h2>
+        <form  id="formConnex" action="inscription.php" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center" method="post">
+            <div class="col-md-12">
+                <label for="nom" class="form-label text-white">Identifiant :</label>
+                <input type="text" name="creaPseudo" placeholder="Entrez un Identifiant" class="form-control" id="nomAdmin" autocomplete="off" required>
+            </div>
+            <div class="col-md-12">
+                <label for="prenom" class="form-label text-white">Mot de passe :</label>
+                <input type="password" name="creaPassword" placeholder="Mot de passe" class="form-control" id="passwordAdmin" autocomplete="off" required>
+            </div>
+            <div class="col-md-12">
+                <label for="prenom" class="form-label text-white">Admin : 0/1</label>
+                <input type="password" name="creaAdmin" placeholder="Ce compte est admin ?" class="form-control" id="passwordAdmin" autocomplete="off" required>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center mx-auto">
+                    <button type="submit" class="btn btn-dark">Envoyer</button>
+            </div>
+        </form>   
     </div>
     
     <div class="menu-container">
-        
         <div class="titlescards d-flex justify-content-center align-items-center mx-auto"><h2 class="text-white">Les projets</h2></div>
         <div class="menu-categories" >
             
             <?php 
             $stmt = $bdd->query("SELECT * FROM projetuser_alltargets");
             while ($row = $stmt->fetch()) {
-              echo "<button  class='menu-category'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser'] ."</a></button>";
+              echo "<button  class='menu-category'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser']."    ".$row['categorie_projetuser'].""."<button class='btn text-white'>Supprimer</button><br><button class='btn text-white'>Modifier</button></a></button>";
             }
             ?>
             
         </div>
+       
+
         <div class="formishUser">
             
             <h2 class="titlecrudprod text-white d-flex justify-content-center">Créer un projet :</h2>
