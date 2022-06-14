@@ -112,13 +112,12 @@
 
             });
         }
-        function update_projet(id){
+        function update_projet(event){
             $.post('traitement_update.php', {
                 id: id}, 
                 
                 function(returnedData){
-                    
-                location.reload();
+                    console.log(returnedData);
 
             });
         }
