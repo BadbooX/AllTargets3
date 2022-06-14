@@ -1,0 +1,238 @@
+*{
+    background-color: rgb(8, 5, 5);
+    margin: 0;
+    padding:0;
+}
+/* Navbar */
+.lilogo{
+    height: 80px;
+    width:80px;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1ch;
+    margin-left: 15px;
+}
+.nav-link{
+    text-align: center;
+    margin: 6px;
+    background: linear-gradient(to top, rgba(62, 6, 68, 1) 0%, rgba(62, 6, 68, 1) 4px, transparent 5px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
+}
+.nav-link:hover{
+    background-size: 100% 100%;
+}
+
+.container{
+    background-color: white;
+}
+/* Fin Navbar*/
+
+/* main content */
+.menu-container{
+    line-height: 2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+span{
+    border-radius: 5px;
+    color: white;
+
+}
+strong{
+    background-color: transparent;
+}
+.menu-title{
+    margin-bottom: 100px;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+}
+.menu-categories{
+    display: grid;
+    margin-top:50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10ch;
+    margin-bottom: 120px;
+}
+.menu-category{
+    border:none;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    
+    width: 350px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+    
+}   
+.menu-category > a{
+    text-decoration: none;
+    color: whitesmoke;
+
+    background-color: transparent;
+    font-size: 1.5em;
+    font-style: italic;
+
+}
+ .menu-category:hover{
+    background-color: rgba(62, 6, 68, 1); 
+
+    opacity: 1;
+} 
+
+.menu-category:hover > a {
+    font-style: italic;
+    color:rgba(62, 6, 68, 1);
+
+}
+.bg-dark{
+    --bs-bg-opacity:0;
+    
+}
+.picard{
+    width: 100%;
+    height: 100%;
+}
+/* connex */
+.h1Connex{
+    margin-top: 180px;
+}
+#formConnex{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+/* fin de connex */
+/* Fin main content */
+/* footer */
+#linksfoot{
+    text-decoration: none;
+ }
+.footertitle{
+    color:rgba(62, 6, 68, 1);
+}
+.logogit{
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+.logogit:hover{
+    color:rgba(62, 6, 68, 1);
+}
+
+/* fin footer */
+
+/*User*/
+.titlecrudprod{
+    margin-top: 50px;
+}
+.titlescards{
+    margin-top: 200px;
+}
+.welcomelanding{
+    color: white;
+    margin-top: 150px;
+    margin-bottom: -100px;
+}
+.formishUser{
+    margin-bottom: 100px;
+
+}
+.btnFormUser{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+}
+.inputlanding{
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:black;
+}
+/* Footer user*/
+.footeruser{
+    margin-top: -16px;
+}
+/* fin footer user */
+/*fin user*/
+/* Admin */
+.createUser{
+    margin-top: 100px;
+}
+.menu-container{
+    margin-top: -200px;
+}
+.boxCommand{
+    width: 100px;
+}
+.menu-categoro{
+    display: grid;
+    margin-top:50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap:8ch;
+    margin-left: 150px;
+    margin-bottom: 120px;
+}
+.menu-categori{
+    border:none;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    width: 350px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+    
+}
+.menu-categori > a{
+    text-decoration: none;
+    color: whitesmoke;
+
+    background-color: transparent;
+    font-size: 1.5em;
+    font-style: italic;
+
+}
+ .menu-categori:hover{
+    background-color: rgba(62, 6, 68, 1); 
+
+    opacity: 1;
+} 
+
+.menu-categori:hover > a {
+    font-style: italic;
+    color:rgba(62, 6, 68, 1);
+
+}
+/*  fin Admin */
+
+
+
+@media (max-width: 1250px) {
+    .menu-categoro{
+        gap:8ch;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        
+    }
+    .menu-category{
+        width: 350px;
+        height: 200px;
+    }
+    .menu-categori{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+
