@@ -2,7 +2,7 @@
     <div class="container">
         <div class="cont">
             <a href="index.php" class="navbar-brand">
-                <img class="lilogo" src="assets/img/target.png" alt="">
+                <img class="lilogo" src="assets/img/target.png" alt="petitLogo">
                 <h2>AllTargets</h2>
             </a>
         </div>

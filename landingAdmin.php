@@ -119,6 +119,8 @@
                 function(returnedData){
                     console.log(returnedData);
 
+                    location.reload();
+
             });
         }
         </script>

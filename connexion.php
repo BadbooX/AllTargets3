@@ -64,7 +64,7 @@
             }
         }
         ?>
-        <form  id="formConnex" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center" novalidate>
+        <form  id="formConnex" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center">
             <div class="col-md-12">
                 <label for="nom" class="form-label text-white">Identifiant :</label>
                 <input type="text" id='prenom' placeholder="Entrez votre Identifiant" class="form-control" id="nomAdmin" autocomplete="off" required>
@@ -88,7 +88,7 @@
                     <p>
                         <a href="index.php" id="linksfoot" class="text-white">Accueil<br></a>
                         <a href="connexion.php" id="linksfoot" class="text-white">Connexion<br></a>
-                        <a href="https://github.com/BadbooX/AllTargets2"><i class="logogit fa-brands fa-github"></i></a>
+                        <a href="https://github.com/BadbooX/AllTargets3"><i class="logogit fa-brands fa-github"></i></a>
                     </p>
                 </div>
 
@@ -121,6 +121,6 @@
     <script src="https://kit.fontawesome.com/1f7ab514ca.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/jajax.js"></script>
+    <script src="assets/js/ajax.js"></script>
 </body>
 </html>
