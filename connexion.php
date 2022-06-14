@@ -64,17 +64,17 @@
             }
         }
         ?>
-        <form  id="formConnex" action="connexionTraitement.php" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center" method="post">
+        <form  id="formConnex" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center" novalidate>
             <div class="col-md-12">
                 <label for="nom" class="form-label text-white">Identifiant :</label>
-                <input type="text" name="pseudo" placeholder="Entrez votre Identifiant" class="form-control" id="nomAdmin" autocomplete="off" required>
+                <input type="text" id='prenom' placeholder="Entrez votre Identifiant" class="form-control" id="nomAdmin" autocomplete="off" required>
             </div>
             <div class="col-md-12">
                 <label for="prenom" class="form-label text-white">Mot de passe :</label>
-                <input type="password" name="password" placeholder="Mot de passe" class="form-control" id="passwordAdmin" autocomplete="off" required>
+                <input type="password" id='password'placeholder="Mot de passe" class="form-control" id="passwordAdmin" autocomplete="off" required>
             </div>
             <div class="col-md-12 d-flex justify-content-center mx-auto">
-                    <button type="submit" class="btn btn-dark">Envoyer</button>
+                    <button type="submit" id='login' class="btn btn-dark">Envoyer</button>
             </div>
         </form>
     </div>
@@ -116,8 +116,11 @@
             </div>
         </div>
     </footer>
+    
+    
     <script src="https://kit.fontawesome.com/1f7ab514ca.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/jajax.js"></script>
 </body>
 </html>
