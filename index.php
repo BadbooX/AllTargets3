@@ -24,7 +24,7 @@
             while ($row = $stmt->fetch()) {
               echo "<button  class='menu-category'>
                 
-                <a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>" . $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser'] ."</a>
+                <a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>" . $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."     ".$row['time_projetuser'] ." ".$row['categorie_projetuser']."</a>
                 </button>";
             }
             ?>

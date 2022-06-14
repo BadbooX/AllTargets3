@@ -5,7 +5,7 @@ include 'config.php';
 
 
 
-$sql = "UPDATE `projetuser_alltargets` SET `nom_projetuser`, `categorie_projetuser` WHERE `nom_projetuser`=? AND `categorie_projetuser`=?";
+$sql = "UPDATE projetuser_alltargets SET nom_projetuser, categorie_projetuser WHERE id_projetuser=?";
 
 $titre = $_POST['updateTitle'];
 $catego = $_POST['updateCate'];
