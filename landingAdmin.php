@@ -71,7 +71,7 @@
             $stmt = $bdd->query("SELECT * FROM projetuser_alltargets");
             while ($row = $stmt->fetch()) {
               echo "<div><button  class='menu-categori'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."  <br>   ".$row['time_projetuser']."    ".$row['categorie_projetuser'].""."</a></div><div class='boxCommand text-align align-item-center justify-content-center'>
-              <button class='btn text-white' onclick='delete_projet(event.target.id)' id='". $row['id_projetuser']."'>Supprimer</button><br><button class='btn text-white'>Modifier</button></button></div>";
+              <button class='btn text-white' onclick='delete_projet(event.target.id)' id='". $row['id_projetuser']."'>Supprimer</button><br><button class='btn text-white'>Modifier</button></button><form ><input class='form-control mb-2' type='text' name='updateTitle' autocomplete='off' placeholder='Titre' required><input class='form-control mb-2' type='text' name='updateCate' autocomplete='off' placeholder='Catégorie' required><button type='submit'onclick='update_projet(event.target.id)' class='btn btn-dark'>Envoyer</button></form></div>";
             }
             ?>
             
@@ -79,7 +79,6 @@
        
 
         <div class="formishUser">
-            
             <h2 class="titlecrudprod text-white d-flex justify-content-center">Créer un projet :</h2>
             <form enctype="multipart/form-data" action="formishuser_traitement.php" class="formuser d-flex justify-content-center align-items-center flex-column" method="post">
                 <label for="" class="form-label text-white" >Nom de projet</label>
@@ -88,7 +87,6 @@
                 <input class="form-control mb-2" type="text" name="linkProjet" autocomplete="off" placeholder="Entrez un lien" required>
                 <label for="" class="form-label text-white" >Image du projet</label>
                 <input class="form-control mb-2" type="file" name="linkPicProjet"  autocomplete="off" placeholder="Lien de l'image du projet" required>
-                
                 <label for="" class="form-label text-white" >Catégorie</label>
                 <input class="form-control mb-2" type="text" name="categoProjet" autocomplete="off" placeholder="Quel est sa catégorie" required>
                 <button type="submit" class="btn btn-dark">Envoyer</button>
@@ -106,6 +104,16 @@
     <script>
         function delete_projet(id){
             $.post('traitement_delete.php', {
+                id: id}, 
+                
+                function(returnedData){
+                    
+                location.reload();
+
+            });
+        }
+        function update_projet(id){
+            $.post('traitement_update.php', {
                 id: id}, 
                 
                 function(returnedData){
