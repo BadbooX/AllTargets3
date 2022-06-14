@@ -64,14 +64,14 @@
             }
         }
         ?>
-        <form  id="formConnex" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center">
+        <form action="connexionTraitement.php" method="post" id="formConnex" class="row g-3 d-flex flex-column justify-content-center mx-auto align-items-center">
             <div class="col-md-12">
                 <label for="nom" class="form-label text-white">Identifiant :</label>
-                <input type="text" id='prenom' placeholder="Entrez votre Identifiant" class="form-control" id="nomAdmin" autocomplete="off" required>
+                <input type="text" name="pseudo" id='prenom' placeholder="Entrez votre Identifiant" class="form-control" id="nomAdmin" autocomplete="off" required>
             </div>
             <div class="col-md-12">
                 <label for="prenom" class="form-label text-white">Mot de passe :</label>
-                <input type="password" id='password'placeholder="Mot de passe" class="form-control" id="passwordAdmin" autocomplete="off" required>
+                <input type="password" name="password"id='password'placeholder="Mot de passe" class="form-control" id="passwordAdmin" autocomplete="off" required>
             </div>
             <div class="col-md-12 d-flex justify-content-center mx-auto">
                     <button type="submit" id='login' class="btn btn-dark">Envoyer</button>
