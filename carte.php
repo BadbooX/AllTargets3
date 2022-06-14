@@ -11,11 +11,7 @@
 <body>
     <?php 
     include 'navbar.php';?>
-    
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-
+    <iframe src="https://www.google.com/maps/d/embed?mid=1TixSu-1Apq8EnAJ6-UU8YHAWXX5PiEk&ehbc=2E312F" width="640" height="480"></iframe>
     <?php include 'footer.php'; ?>
     <script src="https://kit.fontawesome.com/1f7ab514ca.js" crossorigin="anonymous"></script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
