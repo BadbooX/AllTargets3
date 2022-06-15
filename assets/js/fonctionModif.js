@@ -1,12 +1,13 @@
 var hideshow = document.getElementById('hideshow');
-let toggle = document.getElementById('togg');
+var toggle = document.getElementById('togg');
 
 
+function afficher(){
+console.log('oui');
+   
+    if(hideshow.style.display != 'none'){
+        console.log('bloco');
+        hideshow.style.display == 'none';
 
-toggle.addEventListener("click", () => {
-  if(getComputedStyle(hideshow).display != "none"){
-    hideshow.style.display = "none";
-  } else {
-    hideshow.style.display = "block";
-  }
-})
+    }else{hideshow.style.display == 'block'}
+}

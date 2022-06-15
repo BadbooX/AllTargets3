@@ -71,7 +71,8 @@
             $stmt = $bdd->query("SELECT * FROM projetuser_alltargets");
             while ($row = $stmt->fetch()) {
               echo "<div><button  class='menu-categori'><a href='".$row['lien']."'><img class='picard' src='assets/img/". $row['image_projetuser']  . "'>". $row['nomcreateur_projetuser']."     ".$row['nom_projetuser']."  <br>   ".$row['time_projetuser']."    ".$row['categorie_projetuser']." "."</a></div><div class='boxCommand text-align align-item-center justify-content-center'>
-              <button class='btn text-white' onclick='delete_projet(event.target.id)' id='". $row['id_projetuser']."'>Supprimer</button><br><button  class='btn text-white' id='togg'>Modifier</button><div id='hideshow'><form ><input class='form-control mb-2' type='text' name='updateTitle' autocomplete='off' placeholder='Titre' required><input class='form-control mb-2' type='text' name='updateCate' autocomplete='off' placeholder='Catégorie' required><button type='submit'onclick='update_projet(event.target.id)' class='btn btn-dark'>Envoyer</button></form></div></div>";
+              <button class='btn text-white' onclick='delete_projet(event.target.id)' id='". $row['id_projetuser']."'>Supprimer</button><br>
+              <button  class='btn text-white' id='togg' onclick='afficher()'>Modifier</button><div id='hideshow' ><form ><input class='form-control mb-2' type='text' name='updateTitle' autocomplete='off' placeholder='Titre' required><input class='form-control mb-2' type='text' name='updateCate' autocomplete='off' placeholder='Catégorie' required><button type='submit'onclick='update_projet(event.target.id)' class='btn btn-dark'>Envoyer</button></form></div></div>";
             }
             ?>
             
@@ -113,9 +114,9 @@
 
             });
         }
-        function update_projet(id,){
+        function update_projet(id){
             $.post('traitement_update.php', {
-                id: id}, 
+                id: id},
                 
                 function(returnedData){
                     console.log(returnedData);
@@ -125,7 +126,7 @@
             });
         }
         </script>
-        <script src="fonctionModif.js"></script>
+        <script src="assets/js/fonctionModif.js"></script>
         
 </body>
 </html>

@@ -171,6 +171,9 @@ strong{
 .boxCommand{
     width: 100px;
 }
+#hideshow{
+    display: none;
+}
 .menu-categoro{
     display: grid;
     margin-top:50px;
